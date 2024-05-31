@@ -1,0 +1,62 @@
+ssh://hengxu@mars22.ihpc.uts.edu.au:22/home/hengxu/miniconda3/envs/pytorch/bin/python -u "/home/hengxu/Data/PycharmWorkspace/Technical Paper Two/EFUS/accuracy/evaluate_accuracy_batchnorm_models.py"
+device = cuda
+target_class = 0
+test_batch_size = 256
+total_class_number = 1000
+tv_model = resnet18
+Generate rest test dataset
+100%|█████████████████████████████████████| 34747/34747 [22:53<00:00, 25.30it/s]
+Test rest dataset 	 0.7436835585261157
+Test unlearning dataset 	 0.8611111111111112
+before conv1
+Test rest dataset 	 0.6451557143268705
+Test unlearning dataset 	 0.0
+before conv2
+Test rest dataset 	 0.6815994929561234
+Test unlearning dataset 	 0.0
+before both
+Test rest dataset 	 0.5773097865230042
+Test unlearning dataset 	 0.0
+after conv1
+Test rest dataset 	 0.7052231281150068
+Test unlearning dataset 	 0.2222222222222222
+after conv2
+Test rest dataset 	 0.7182737460747314
+Test unlearning dataset 	 0.3888888888888889
+after both
+Test rest dataset 	 0.6737057416957161
+Test unlearning dataset 	 0.0
+
+Process finished with exit code 0
+
+
+ssh://hengxu@mars22.ihpc.uts.edu.au:22/home/hengxu/miniconda3/envs/pytorch/bin/python -u "/home/hengxu/Data/PycharmWorkspace/Technical Paper Two/EFUS/accuracy/evaluate_accuracy_conv_models.py"
+device = cuda
+target_class = 0
+test_batch_size = 256
+total_class_number = 1000
+tv_model = vgg13
+Generate rest test dataset
+100%|█████████████████████████████████████| 34747/34747 [22:31<00:00, 25.71it/s]
+Test rest dataset 	 0.7792054391979488
+Test unlearning dataset 	 0.8611111111111112
+before 20
+Test rest dataset 	 0.6143297513756446
+Test unlearning dataset 	 0.0
+before 22
+Test rest dataset 	 0.6997205496816571
+Test unlearning dataset 	 0.0
+before both
+Test rest dataset 	 0.5217366252772896
+Test unlearning dataset 	 0.0
+after 20
+Test rest dataset 	 0.7488116159142635
+Test unlearning dataset 	 0.5833333333333334
+after 22
+Test rest dataset 	 0.7443173633718417
+Test unlearning dataset 	 0.1388888888888889
+after both
+Test rest dataset 	 0.7028031459767797
+Test unlearning dataset 	 0.0
+
+Process finished with exit code 0
